@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="asyncFx:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/asyncFx_jar</output-path>
+    <root id="archive" name="asyncFx.jar">
+      <element id="module-output" name="asyncFx" />
+    </root>
+  </artifact>
+</component>
