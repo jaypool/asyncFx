@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<VBox prefHeight="135.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <HBox spacing="10.0">
          <children>
-            <Button id="Btn1" mnemonicParsing="false" onAction="#changeLbl1" prefHeight="25.0" prefWidth="83.0" text="Button 1" />
+            <Button id="Btn1" fx:id="Btn1" mnemonicParsing="false" onAction="#changeLbl1" prefHeight="25.0" prefWidth="83.0" text="Button 1" />
             <Label id="Lbl1" fx:id="Lbl1" prefHeight="17.0" prefWidth="245.0" text="...">
                <font>
                   <Font size="14.0" />
@@ -24,7 +24,7 @@
       </HBox>
       <HBox spacing="10.0">
          <children>
-            <Button id="Btn2" mnemonicParsing="false" onAction="#changeLbl2" prefHeight="25.0" prefWidth="83.0" text="Button 2" />
+            <Button id="Btn2" fx:id="Btn2" mnemonicParsing="false" onAction="#changeLbl2" prefHeight="25.0" prefWidth="83.0" text="Button 2" />
             <Label id="Lbl2" fx:id="Lbl2" prefHeight="17.0" prefWidth="245.0" text="...">
                <font>
                   <Font size="14.0" />
@@ -37,7 +37,7 @@
       </HBox>
       <HBox layoutX="20.0" layoutY="65.0" spacing="10.0">
          <children>
-            <Button id="Btn3" mnemonicParsing="false" onAction="#changeLbl3" prefHeight="25.0" prefWidth="83.0" text="Button 3" />
+            <Button id="Btn3" fx:id="Btn3" mnemonicParsing="false" onAction="#changeLbl3" prefHeight="25.0" prefWidth="83.0" text="Button 3" />
             <Label id="Lbl3" fx:id="Lbl3" prefHeight="17.0" prefWidth="245.0" text="...">
                <font>
                   <Font size="14.0" />
