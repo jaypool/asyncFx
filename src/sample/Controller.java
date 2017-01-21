@@ -3,8 +3,10 @@ package sample;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class Controller {
 
@@ -15,6 +17,8 @@ public class Controller {
     @FXML private Button Btn1;
     @FXML private Button Btn2;
     @FXML private Button Btn3;
+
+    @FXML private TextField txt1;
 
     @FXML protected void changeLbl1(ActionEvent actionEvent) {
 
@@ -103,6 +107,30 @@ public class Controller {
         Thread thread = new Thread(task);
         thread.setDaemon(true);
         thread.start();
+    }
+
+    @FXML protected void showText(ActionEvent actionEvent) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Some text");
+        alert.setHeaderText("This is to show off concurrency");
+
+        alert.setContentText("You typed: '" + txt1.getText().toString() + "' " +
+                "" +
+                "This is the Text you typed. As you can see this is " +
+                "all possible while you might have clicked one of the " +
+                "three buttons shown above the text field." +
+                "" +
+                "This is called concurrency. Neat huh?");
+        alert.show();
+    }
+
+    // just for demo purposes
+    private Integer Factorial (Integer n) {
+        Integer f = 1;
+        for (Integer i = 1; i <= n; i++) {
+            f *= i;
+        }
+        return f;
     }
 
 }
